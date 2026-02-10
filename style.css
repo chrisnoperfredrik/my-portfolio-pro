@@ -1,7 +1,7 @@
 :root {
     --bg-dark: #121212;      /* Hitam Abu-abu */
     --bg-light: #1e1e1e;     /* Abu-abu lebih terang */
-    --accent: #3b82f6;       /* Biru aksen */
+    --accent: #36393e;       /* Biru aksen */
     --text-white: #ffffff;
     --text-gray: #a0a0a0;
 }
@@ -39,7 +39,7 @@ h1 { font-size: 4.5rem; line-height: 1; margin: 20px 0; }
 .hero-text p { color: var(--text-gray); font-size: 1.1rem; max-width: 450px; margin-bottom: 35px; }
 
 .btn-primary { background: var(--accent); color: white; text-decoration: none; padding: 15px 35px; border-radius: 5px; font-weight: 700; transition: 0.3s; display: inline-block; }
-.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(21, 27, 35, 0.3); }
 
 .hero-actions { display: flex; align-items: center; gap: 30px; }
 .social-mini a { color: var(--text-gray); font-size: 1.3rem; transition: 0.3s; margin-right: 15px; }
