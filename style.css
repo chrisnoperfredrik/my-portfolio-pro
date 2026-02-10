@@ -33,3 +33,39 @@ body {
         display: none; /* Di HP biarkan auto-wrap agar tidak patah aneh */
     }
 }
+/* Gallery Korfball */
+.korfball-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi 2 kolom sejajar */
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 180px; /* Tinggi landscape */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Foto tetap rapi meski ukuran aslinya beda */
+    transition: transform 0.5s ease;
+}
+
+.gallery-img:hover img {
+    transform: scale(1.1); /* Efek zoom saat kursor di atas foto */
+}
+
+/* Penyesuaian untuk HP */
+@media (max-width: 600px) {
+    .korfball-gallery {
+        grid-template-columns: 1fr; /* Di HP foto jadi tumpuk vertikal agar tidak kekecilan */
+    }
+    .gallery-img {
+        height: 200px;
+    }
+}
