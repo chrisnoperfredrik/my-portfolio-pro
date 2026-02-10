@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Portofolio Profesional</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -11,27 +11,46 @@
 
     <header>
         <nav>
-            <div class="logo">PORTFOLIO<span>.</span></div>
+            <div class="logo">PRO<span>FILE.</span></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#" class="btn-contact">Contact Me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#" class="btn-contact">Hubungi Saya</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="hero">
-        <div class="hero-content">
-            <h1 class="fade-in">Hi, Saya <span>[Nama Kamu]</span></h1>
-            <p class="fade-in-delay">Java Developer & Creative Enthusiast</p>
-            <button class="cta-button">Lihat Proyek</button>
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Hi, Saya <span>[Nama Kamu]</span></h1>
+            <p>Seorang Developer Kreatif yang fokus pada solusi digital modern.</p>
+            <a href="#gallery" class="cta-button">Lihat Foto Saya</a>
         </div>
-        <div class="hero-image">
+        
+        <div class="hero-image fade-in">
             <div class="photo-frame">
-                <img src="foto-kamu.jpg" alt="Foto Profil">
+                <img src="1.jpg" alt="Foto Profil Utama">
             </div>
         </div>
-    </main>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2 class="fade-in">Koleksi Foto</h2>
+        <div class="gallery-grid">
+            <div class="gallery-card fade-in">
+                <img src="2.jpg" alt="Foto Kedua">
+                <p>Aktivitas 01</p>
+            </div>
+            <div class="gallery-card fade-in">
+                <img src="1.jpg" alt="Foto Ketiga">
+                <p>Aktivitas 02</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portofolio Saya. Dibuat dengan ❤️</p>
+    </footer>
 
 </body>
 </html>
