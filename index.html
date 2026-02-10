@@ -3,63 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chrisnoper Fredrik | Portfolio</title>
+    <title>Chrisnoper Fredrik | Official Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <nav>
-        <div class="logo">FRED<span>RIK.</span></div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#korfball">Korfball</a>
-            <a href="https://instagram.com/chrisnoperfr" target="_blank" class="btn-main">Contact</a>
+        <div class="container nav-wrapper">
+            <div class="logo">FRED<span>RIK.</span></div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="https://www.instagram.com/chrisnoperfr" target="_blank" class="btn-sm">Contact</a>
+            </div>
         </div>
     </nav>
 
     <section class="hero" id="home">
-        <div class="hero-overlay">
-            <div class="hero-content" data-aos="fade-up">
-                <div class="profile-pic">
-                    <img src="1.jpg" alt="Chrisnoper Fredrik">
+        <div class="container hero-grid">
+            <div class="hero-text" data-aos="fade-right">
+                <span class="sub-title">Java Developer & Athlete</span>
+                <h1>Chrisnoper <br>Fredrik <span class="dot">.</span></h1>
+                <p>creative technologist—orang yang berdiri di titik temu desain visual, teknologi, dan sistem kerja. Kamu bukan tipe “desainer yang cuma estetika” atau “anak IT yang cuma teknis”, tapi penghubung antara tampilan, fungsi, dan tujuan.</p>
+                <div class="hero-actions">
+                    <a href="mailto:chrisnoperfredrick@gmail.com" class="btn-primary">Email Me</a>
+                    <div class="social-mini">
+                        <a href="https://github.com/chrisnoperfredrik" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/chrisnoperfr" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <h1>Chrisnoper Fredrik Alexsander</h1>
-                <p class="tagline">creative technologist—orang yang berdiri di titik temu desain visual, teknologi, dan sistem kerja. Kamu bukan tipe “desainer yang cuma estetika” atau “anak IT yang cuma teknis”, tapi penghubung antara tampilan, fungsi, dan tujuan.</p>
-                
-                <div class="bio-box">
-                    <div class="bio-item"><strong>Born:</strong> Nov 19, 2005</div>
-                    <div class="bio-item"><strong>From:</strong> Tangerang, Indonesia</div>
-                    <div class="bio-item"><strong>Hobbies:</strong> Sports & Coding</div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="image-wrapper">
+                    <img src="1.jpg" alt="Fredrik Profile">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="korfball" class="section">
-        <div class="container">
-            <h2 data-aos="fade-right">About Korfball</h2>
-            <p class="desc" data-aos="fade-right">Korfball is a mixed-gender team sport similar to basketball. It emphasizes teamwork, gender equality, and strategic throwing into a high basket without a backboard.</p>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item" data-aos="zoom-in"><img src="2.jpg" alt="Match 1"></div>
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="1.jpg" alt="Match 2"></div>
-                </div>
+    <section class="about" id="about">
+        <div class="container grid-2">
+            <div class="info-card" data-aos="zoom-in">
+                <h3>Personal Info</h3>
+                <ul>
+                    <li><span>Born</span> Nov 19, 2005</li>
+                    <li><span>From</span> Tangerang, Indonesia</li>
+                    <li><span>Hobby</span> Sports & Tech</li>
+                </ul>
+            </div>
+            <div class="info-text" data-aos="fade-up">
+                <h2>About Korfball</h2>
+                <p>Korfball adalah olahraga tim campuran (pria & wanita) yang melatih kerjasama dan strategi. Sebagai atlet Tangsel, saya membawa semangat kompetitif ini ke dalam dunia coding.</p>
+            </div>
         </div>
     </section>
 
-    <footer class="social-footer">
-        <h3>Connect with Me</h3>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/chrisnoperfr?igsh=MTA1dnJ0bGN6ZjdnMg%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:chrisnoperfredrick@gmail.com"><i class="far fa-envelope"></i></a>
-            <a href="https://github.com/chrisnoperfredrik" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </footer>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ once: true });</script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
