@@ -17,7 +17,7 @@
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="https://www.instagram.com/chrisnoperfr" target="_blank" class="btn-sm">Contact</a>
+                <a href="#contact" class="btn-sm">Contact</a>
             </div>
         </div>
     </nav>
@@ -28,11 +28,11 @@
                 <span class="sub-title">Graphic Designer & Athlete</span>
                 <h1>Chrisnoper <br>Fredrik <span class="dot">.</span></h1>
                 <p class="hero-desc">
-                    Creative Technologist,<br>
+                    Creative Technologist<br>
                     focused on system-driven design and precision in digital functionality.
                 </p>
                 <div class="hero-actions">
-                    <a href="mailto:chrisnoperfredrick@gmail.com" class="btn-primary">Contact Me</a>
+                    <a href="#contact" class="btn-primary">Contact Me</a>
                     <div class="social-mini">
                         <a href="https://github.com/chrisnoperfredrik" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://www.instagram.com/chrisnoperfr" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -69,7 +69,32 @@
         </div>
     </section>
 
+    <section class="contact-section" id="contact">
+        <div class="container" data-aos="fade-up">
+            <div class="contact-box">
+                <h2>Get In Touch</h2>
+                <p>Ada proyek menarik atau ingin diskusi seputar Korfball? Yuk, hubungi saya!</p>
+                <div class="contact-links">
+                    <a href="mailto:chrisnoperfredrick@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://www.instagram.com/chrisnoperfr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        
+        // Script Tambahan untuk Smooth Scroll Manual (Support semua browser)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
