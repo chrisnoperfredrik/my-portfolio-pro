@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a; /* Warna dark biru charcoal */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span { color: #3b82f6; }
+
+nav ul { display: flex; list-style: none; gap: 30px; }
+
+nav ul li a {
+    text-decoration: none;
+    color: #94a3b8;
+    transition: 0.3s;
+}
+
+nav ul li a:hover { color: #fff; }
+
+.btn-contact {
+    border: 1px solid #3b82f6;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    color: #3b82f6;
+    display: block;
+}
+
+.hero-content p {
+    color: #94a3b8;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+/* Foto dengan Frame Animasi */
+.photo-frame {
+    width: 350px;
+    height: 350px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    overflow: hidden;
+    animation: morph 8s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-frame img {
+    width: 90%;
+    height: 90%;
+    object-cover: cover;
+    border-radius: inherit;
+}
+
+/* Animasi Morphing untuk Foto */
+@keyframes morph {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+/* Simple Fade In */
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding-top: 100px;
+    }
+    .hero-content h1 { font-size: 2.5rem; }
+    .photo-frame { width: 250px; height: 250px; }
+}
