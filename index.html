@@ -3,54 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Chrisnoper Fredrik | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">PRO<span>FILE.</span></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#" class="btn-contact">Hubungi Saya</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content fade-in">
-            <h1>hai, aku <span>Chrisnoper Fredrik Alexsander</span></h1>
-            <p>aku seorang creative technologist yaitu orang yang berdiri di titik temu desain visual, teknologi, dan sistem kerja. Kamu bukan tipe “desainer yang cuma estetika” atau “anak IT yang cuma teknis”, tapi penghubung antara tampilan, fungsi, dan tujuan.</p>
-            <a href="#gallery" class="cta-button">Lihat Foto Saya</a>
+    <nav>
+        <div class="logo">FRED<span>RIK.</span></div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#korfball">Korfball</a>
+            <a href="https://instagram.com/chrisnoperfr" target="_blank" class="btn-main">Contact</a>
         </div>
-        
-        <div class="hero-image fade-in">
-            <div class="photo-frame">
-                <img src="1.jpg" alt="Foto Profil Utama">
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="profile-pic">
+                    <img src="1.jpg" alt="Chrisnoper Fredrik">
+                </div>
+                <h1>Chrisnoper Fredrik Alexsander</h1>
+                <p class="tagline">creative technologist—orang yang berdiri di titik temu desain visual, teknologi, dan sistem kerja. Kamu bukan tipe “desainer yang cuma estetika” atau “anak IT yang cuma teknis”, tapi penghubung antara tampilan, fungsi, dan tujuan.</p>
+                
+                <div class="bio-box">
+                    <div class="bio-item"><strong>Born:</strong> Nov 19, 2005</div>
+                    <div class="bio-item"><strong>From:</strong> Tangerang, Indonesia</div>
+                    <div class="bio-item"><strong>Hobbies:</strong> Sports & Coding</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="gallery-section">
-        <h2 class="fade-in">Koleksi Foto</h2>
-        <div class="gallery-grid">
-            <div class="gallery-card fade-in">
-                <img src="2.jpg" alt="Foto Kedua">
-                <p>Aktivitas 01</p>
-            </div>
-            <div class="gallery-card fade-in">
-                <img src="2.jpg" alt="Foto Ketiga">
-                <p>Aktivitas 02</p>
-            </div>
+    <section id="korfball" class="section">
+        <div class="container">
+            <h2 data-aos="fade-right">About Korfball</h2>
+            <p class="desc" data-aos="fade-right">Korfball is a mixed-gender team sport similar to basketball. It emphasizes teamwork, gender equality, and strategic throwing into a high basket without a backboard.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in"><img src="2.jpg" alt="Match 1"></div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="1.jpg" alt="Match 2"></div>
+                </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; Hubungi saya</p>
+    <footer class="social-footer">
+        <h3>Connect with Me</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/chrisnoperfr?igsh=MTA1dnJ0bGN6ZjdnMg%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:chrisnoperfredrick@gmail.com"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/chrisnoperfredrik" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
 </body>
 </html>
