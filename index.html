@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chrisnoper Fredrik | Portfolio</title>
+    <title>Chrisnoper Fredrik | Official Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -16,19 +16,26 @@
             <div class="logo">FRED<span>RIK.</span></div>
             <div class="nav-links">
                 <a href="#about">About</a>
+                <a href="#contact">Contact</a>
                 <a href="CV-Chrisnoper-2025.pdf" download class="btn-cv">CV</a>
             </div>
         </div>
     </nav>
 
-    <main class="container">
+    <main>
         <section class="hero" id="home">
-            <div class="hero-grid">
+            <div class="container hero-grid">
                 <div class="hero-text" data-aos="fade-right">
                     <span class="sub-title">Graphic Designer & Athlete</span>
                     <h1>Chrisnoper<br>Fredrik Alexsander<span class="dot">.</span></h1>
                     <p class="hero-desc">Creative Technologist in visual design and computer engineering.</p>
-                    <a href="#contact" class="btn-primary">Contact Me</a>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary">Contact Me</a>
+                        <div class="social-mini">
+                            <a href="https://github.com/chrisnoperfredrik" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/chrisnoperfr" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-visual" data-aos="fade-left">
                     <div class="image-wrapper">
@@ -39,7 +46,7 @@
         </section>
 
         <section class="about" id="about">
-            <div class="grid-2">
+            <div class="container grid-2">
                 <div class="info-card" data-aos="zoom-in">
                     <h3>Personal Info</h3>
                     <ul>
@@ -50,7 +57,7 @@
                 </div>
                 <div class="info-text" data-aos="fade-up">
                     <h2>About Me</h2>
-                    <p>Junior Graphic Designer studying Computer Engineering at Universitas Esa Unggul. Passionate about bringing visual ideas to life.</p>
+                    <p>Junior Graphic Designer studying Computer Engineering at Universitas Esa Unggul. Passionate about bringing visual ideas to life through modern design and technology.</p>
                     
                     <div class="software-grid">
                         <div class="software-card" onclick="this.classList.toggle('clicked')">
@@ -74,19 +81,21 @@
         </section>
 
         <section class="contact-section" id="contact">
-            <div class="contact-box" data-aos="fade-up">
-                <h2>Get In Touch</h2>
-                <p>Feel free to reach out for design collaborations or tech projects.</p>
-                <div class="contact-links">
-                    <a href="https://wa.me/6281311165484" target="_blank" class="wa-btn">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="https://www.instagram.com/chrisnoperfr" target="_blank" class="ig-btn">
-                        <i class="fab fa-instagram"></i> Instagram
-                    </a>
-                    <a href="mailto:chrisnoperfredrick@gmail.com" class="mail-btn">
-                        <i class="fa-solid fa-envelope"></i> Email
-                    </a>
+            <div class="container" data-aos="fade-up">
+                <div class="contact-box">
+                    <h2>Get In Touch</h2>
+                    <p>Feel free to reach out for design collaborations or tech projects.</p>
+                    <div class="contact-links-wrapper">
+                        <a href="https://wa.me/6281311165484" target="_blank" class="contact-item wa">
+                            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+                        </a>
+                        <a href="https://www.instagram.com/chrisnoperfr" target="_blank" class="contact-item ig">
+                            <i class="fab fa-instagram"></i><span>Instagram</span>
+                        </a>
+                        <a href="mailto:chrisnoperfredrick@gmail.com" class="contact-item mail">
+                            <i class="fa-solid fa-envelope"></i><span>Email</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
