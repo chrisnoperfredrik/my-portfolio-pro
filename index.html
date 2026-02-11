@@ -15,8 +15,8 @@
         <div class="container nav-wrapper">
             <div class="logo">FRED<span>RIK.</span></div>
             <div class="nav-links">
-                <a href="#about" class="nav-item">About</a>
-                <a href="#contact" class="nav-item">Contact</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
                 <a href="CV-Chrisnoper-2025.pdf" download class="btn-cv">CV</a>
             </div>
         </div>
@@ -103,24 +103,18 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Init AOS
         AOS.init({ duration: 800, once: true });
 
-        // SMOOTH SCROLL JAVASCRIPT FIX (UNTUK HP)
+        // SMOOTH SCROLL JS
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
                 if (targetElement) {
-                    const offset = 80; // Sesuaikan dengan tinggi navbar
+                    const offset = 80;
                     const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
                 }
             });
         });
