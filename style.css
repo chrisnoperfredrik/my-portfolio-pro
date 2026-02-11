@@ -40,7 +40,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 4rem); font-family: 'Plus Jakarta Sans'; line
 .hero-actions { display: flex; align-items: center; gap: 20px; }
 .social-mini a { color: var(--text-gray); font-size: 1.2rem; transition: 0.3s; }
 
-/* About & Gallery */
+/* About */
 .about { padding: 80px 0; background: var(--bg-light); }
 .grid-2 { display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; }
 .info-card { background: var(--bg-dark); padding: 30px; border-radius: 15px; border-left: 4px solid var(--accent); height: fit-content; }
@@ -51,9 +51,17 @@ h1 { font-size: clamp(2.2rem, 5vw, 4rem); font-family: 'Plus Jakarta Sans'; line
 .btn-cv-large:hover { background: var(--accent); color: white; transform: translateY(-3px); }
 .btn-cv-large i { margin-right: 8px; }
 
-.korfball-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
-.gallery-img { height: 160px; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
-.gallery-img img { width: 100%; height: 100%; object-fit: cover; }
+/* SOFTWARE SKILLS GRID */
+.software-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; margin-top: 35px; }
+.software-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 10px; cursor: pointer; transition: all 0.3s ease; }
+.software-card i { font-size: 1.4rem; color: var(--text-gray); transition: all 0.3s ease; }
+
+/* Click Animation */
+.software-card:active { transform: scale(0.85); }
+
+/* Hover Animation */
+.software-card:hover { background: rgba(59, 130, 246, 0.1); border-color: var(--accent); }
+.software-card:hover i { color: var(--accent); transform: translateY(-3px); }
 
 /* Contact Section */
 .contact-section { padding: 100px 0; text-align: center; }
@@ -71,6 +79,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 4rem); font-family: 'Plus Jakarta Sans'; line
     h1 { font-size: 2.3rem; }
     .hero-actions { justify-content: center; flex-direction: column; }
     .nav-links a:not(.btn-sm):not(.btn-cv) { display: none; }
+    .software-grid { grid-template-columns: repeat(4, 1fr); }
     .contact-links { flex-direction: column; align-items: center; }
     .contact-links a { width: 100%; max-width: 250px; justify-content: center; }
 }
